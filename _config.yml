@@ -1,0 +1,21 @@
+# Site settings
+title: Code Fix
+header-img: img/home-bg.png
+email: jamiepgiuliano@gmail.com
+copyright_name: jamiegiuliano
+description: > # this means to ignore newlines until "baseurl:"
+  From Stitch Fix Stylist to Full Stack Developer
+baseurl: "" # the subpath of your site, e.g. /blog
+twitter_username: jamiegiuliano
+github_username:  jamiegiuliano
+learn_profile: jamiegiuliano
+email_username: jamiepgiuliano@gmail.com
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
