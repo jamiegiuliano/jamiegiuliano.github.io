@@ -1,11 +1,10 @@
 ---
 layout: post
 title:      "ThisYear - Sinatra Project"
-date:       2018-03-20 19:52:26 -0400
+date:       2018-04-06 10:19:19 -0400
 permalink:  thisyear_-_portfolio_project
 ---
 
-# Test
 Every year, I attempt keep a running list of the resolutions I've created at the beginning of the year and all of special events, big or small, that occur throughout the year. I've added all types of events- from trying and loving a new restaurant to traveling to New York for the first time. This way, at the end of the year, I get to look back at all the exciting things that have happened over the past 12 months - a lot of which I forget even occurred! 
 So, I thought this would make for a fun app. Plus, I wouldn't have to carry a journal with me everywhere and the app would be a lot simpler to read over at the end of the year when the events and resolutions begin to pile up. 
 
