@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Learning to Code"
-date:       2017-05-11 22:07:46 -0400
+date:       2018-04-06 10:19:19 -0400
 permalink:  learning_to_code
 ---
 
