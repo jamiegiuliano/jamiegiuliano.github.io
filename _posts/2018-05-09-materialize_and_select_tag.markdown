@@ -5,13 +5,13 @@ date:       2018-05-09 15:17:22 -0400
 permalink:  materialize_and_select_tag
 ---
 
-Right now I'm building a Ruby on Rails and decided to utilize the CSS framework Materialize rather than using Bootstrap. However, I ran into an issue with a select_tag not showing and am hoping to save another developer the time I spent on troubleshooting this issue. 
+Right now I'm building a Ruby on Rails app and decided to utilize the CSS framework Materialize rather than using Bootstrap. However, I ran into an issue with a select_tag not working and am hoping to save another developer the time I spent on troubleshooting this issue. 
 
 * To setup Materialize in a Rails app, include this in your Gemfile:
 
 `gem 'materialize-sass'`
 
-* Next, run
+* Next, in your terminal, run
 
 `bundle install`
 
@@ -33,8 +33,8 @@ However, I quickly realized my select tag wasn't working anymore and after strug
 
 * Then, in `app/assets/javascripts/application.js` adding:
 
-`//= require jquery
-//= require materialize-sprockets`
+`//= require jquery`
+`//= require materialize-sprockets`
 
 * Then, creating a new JS file:
 
@@ -42,9 +42,9 @@ However, I quickly realized my select tag wasn't working anymore and after strug
 
 * And including in this file:
 
-`$(document).ready(function() {
-  $('select').material_select();
-});`
+`$(document).ready(function() {`
+  `$('select').material_select();`
+`});`
 
 This bit of jQuery manually initializes Materialize's custom implementation of the select element ~ now your select tag should be functional again! 
 
