@@ -41,7 +41,7 @@ However, I quickly realized my select tag wasn't working anymore and after strug
 
 `app/assets/javascripts/materialize.js`
 
-* And including in this file:
+* And including in the file:
 
  `$(document).ready(function() {`
  
