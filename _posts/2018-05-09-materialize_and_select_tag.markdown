@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Materialize and Select Tag"
-date:       2018-05-09 19:17:22 +0000
+title:      "Select Tag with Materialize"
+date:       2018-05-09 15:17:22 -0400
 permalink:  materialize_and_select_tag
 ---
 
