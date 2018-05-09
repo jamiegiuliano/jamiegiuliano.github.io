@@ -34,7 +34,6 @@ However, I quickly realized my select tag wasn't working anymore and after strug
 * Then, in `app/assets/javascripts/application.js` adding:
 
  `//= require jquery`
- 
  `//= require materialize-sprockets`
 
 * Then, creating a new JS file:
@@ -44,9 +43,7 @@ However, I quickly realized my select tag wasn't working anymore and after strug
 * And including in the file:
 
  `$(document).ready(function() {`
- 
  `$('select').material_select();`
- 
  `});`
 
 This bit of jQuery manually initializes Materialize's custom implementation of the select element ~ now your select tag should be functional again! 
