@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Select Tag with Materialize"
+title:      "Rails Select Tag with Materialize"
 date:       2018-05-09 15:17:22 -0400
 permalink:  materialize_and_select_tag
 ---
