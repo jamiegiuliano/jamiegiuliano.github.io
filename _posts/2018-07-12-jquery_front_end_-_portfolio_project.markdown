@@ -23,7 +23,7 @@ $(function newLink() {
     const action = this.action;
     createNewLink(values, action);
   });
-});
+})
 ```
 
 The 'action' constant in this function stores the action from the form, which was really helpful since it was nested. The 'values' constant stores the values that were submitted from the form with .serialize(), which creates URL encoded text (including the authenticity token!). These values are then passed to the `createNewLink` function: 
@@ -45,7 +45,7 @@ const createNewLink = function(values, action){
       // reattach listener for New Link Form
       newLink()
 			});
-			```
+```
 			
 This function makes an AJAX post request and if successful, creates a link object and appends the html to the DOM. I'd like to refactor this code as a prototype soon to clean up this function. I also had to make sure that I cleared the input field after appending the html and reattached the listener so the user could create another link without refreshing the form page.
 
@@ -53,7 +53,7 @@ In the end - it all works and I'm really happy with the improvement to the UI! M
 
 One last thing- when I was deploying this project to Heroku I ran into a strange error that, after hours of googling, was fixed by changing `config.assets.js_compressor = :uglifier` in 'config/environments/production.rb' to `config.assets.js_compressor = Uglifier.new(harmony: true)`. From what I've gathered, this has something to do with the current version of Uglifier's lack of support of ES6- hopefully that will save someone a headache! 
 
-Check out the final project [here](https://square-punchcard.herokuapp.com/)
-a walkthrough [here](https://youtu.be/5Aqdi9EE8H8)
+Check out the final project [here](https://square-punchcard.herokuapp.com/)<br />
+a walkthrough [here](https://youtu.be/5Aqdi9EE8H8)<br />
 and the repo [here](https://github.com/jamiegiuliano/punchcard).
 
