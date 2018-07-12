@@ -35,16 +35,15 @@ const createNewLink = function(values, action){
     data: values,
     dataType: 'JSON',
     success: function(data) {
-      let output = 
-			`<li class="collection-item"><a href="${data.url}" target="_blank" hidden_field="${data.id}">${data.category.name}</a>
+      let output = `<li class="collection-item"><a href="${data.url}" target="_blank" hidden_field="${data.id}">${data.category.name}</a>
        <a href="/merchants/${data.merchant_id}/links/${data.id}/edit"><i class="tiny material-icons">edit</i></a>
        <a data-confirm="Are you sure?" data-method="delete" href="/merchants/${data.merchant_id}/links/${data.id}"><i   class="tiny material-icons">delete_forever</i></a>`;
       $('#link_list').append(output);
-			// clear out the input field
+// clear out the input field
       $('#link_url').val('');
       // reattach listener for New Link Form
       newLink()
-			});
+});
 ```
 			
 This function makes an AJAX post request and if successful, creates a link object and appends the html to the DOM. I'd like to refactor this code as a prototype soon to clean up this function. I also had to make sure that I cleared the input field after appending the html and reattached the listener so the user could create another link without refreshing the form page.
