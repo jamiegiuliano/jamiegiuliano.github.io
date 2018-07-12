@@ -46,6 +46,7 @@ const createNewLink = function(values, action){
       newLink()
 			});
 			```
+			
 This function makes an AJAX post request and if successful, creates a link object and appends the html to the DOM. I'd like to refactor this code as a prototype soon to clean up this function. I also had to make sure that I cleared the input field after appending the html and reattached the listener so the user could create another link without refreshing the form page.
 
 In the end - it all works and I'm really happy with the improvement to the UI! My next goal for this project is to make it responsive. 
