@@ -51,7 +51,7 @@ This function makes an AJAX post request and if successful, creates a link objec
 
 In the end - it all works and I'm really happy with the improvement to the UI! My next goal for this project is to make it responsive. 
 
-One last thing- when I was deploying this project to Heroku I ran into a strange error that, after hours of googling, was fixed by changing `config.assets.js_compressor = :uglifier` in 'config/environments/production.rb' to `config.assets.js_compressor = Uglifier.new(harmony: true)`. From what I've gathered, this has something to do with the current version of Uglifier's lack of support of ES6- hopefully that will save someone a headache! 
+One last thing- when I was deploying this project to Heroku I ran into a strange error that, after hours of googling, was fixed by changing `config.assets.js_compressor = :uglifier` in '/config/environments/production.rb' to `config.assets.js_compressor = Uglifier.new(harmony: true)`. From what I've gathered, this has something to do with the current version of Uglifier's lack of support of ES6- hopefully that will save someone a headache! 
 
 Check out the final project [here](https://square-punchcard.herokuapp.com/)<br />
 a walkthrough [here](https://youtu.be/5Aqdi9EE8H8)<br />
